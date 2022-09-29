@@ -1,0 +1,332 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Libre+Franklin);
+
+/* =================== RESET =================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =================== DEFAULTS =================== */
+
+html, button {
+	font-size: 16px;
+	font-family: "Libre Franklin", Libre Franklin, sans-serif;
+}
+
+h1 {
+	margin: 1.6rempx 0 1rem 0;
+    font-size: 1.5rem;
+	font-family: "Libre Franklin", Libre Franklin, sans-serif;
+}
+
+p {
+	font-family: "Libre Franklin", Libre Franklin, sans-serif;
+}
+
+label {
+	font-family: "Libre Franklin", Libre Franklin, sans-serif;
+}
+
+/* ===================  LAYOUT  =================== */
+
+.container {
+	display: grid;
+}
+
+.sub-container {
+	padding: 4rem 10rem 4rem 10rem;
+}
+
+.left-half {
+	background-color: #fcfcfc;
+	grid-column: 1;
+}
+
+.right-half {
+	background-color: #a8dac9;
+	grid-column: 2;
+}
+
+.full-width {
+	background-color: #fcfcfc;
+	grid-column: 1;
+}
+
+/* =================== SPECIFIC =================== */
+header {
+	z-index: 10;
+	position: relative;
+    padding: 40px;
+
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: white;
+	font-weight: 700;
+
+	background: -webkit-linear-gradient(90deg, #134E5E 10%, #71B280 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(90deg, #134E5E 10%, #71B280 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(90deg, #134E5E 10%, #71B280 90%); /* IE10 */
+	background:      -o-linear-gradient(90deg, #134E5E 10%, #71B280 90%); /* Opera 11.10+ */
+	background:         linear-gradient(90deg, #134E5E 10%, #71B280 90%); /* W3C */
+
+	box-shadow: 0px 0px 10px rgba(62, 62, 62, 0.725);
+}
+
+/* ===== UPLOAD TABLE ===== */
+
+/* General */
+table.upload-table {
+	text-align: left;
+	position: relative;
+	border-collapse: collapse; 
+	background-color: #f6f6f6;
+	width: 100%;
+    margin-left:auto; 
+    margin-right:auto; 
+  }
+
+table.upload-table td:nth-of-type(1) {
+	width: 20%;
+}
+
+  /* the second */
+table.upload-table td:nth-of-type(2) {
+	width: 20%;
+}
+  
+  /* the third */
+table.upload-table td:nth-of-type(3) {
+	width: 5%;
+}
+
+table.upload-table td:nth-of-type(4) {
+	width: 5%;
+}
+
+table.upload-table td:nth-of-type(5) {
+	width: 30%;
+}
+
+table.upload-table td:nth-of-type(6) {
+	width: 2.5%;
+}
+
+form {
+	display: none;
+	position: absolute;
+}
+/* Header */
+
+thead > tr > th {
+	border-bottom: 3px solid #c6c6c6;
+	padding: 0.6rem 1.2rem;
+	background: #ffffff;
+	color: rgb(24, 24, 24);
+	height: 3rem;
+	vertical-align: middle; 
+}
+
+/* Footer */
+
+tfoot > tr > th {
+	padding: 0.6rem;
+	background: #173D50;
+	color: #eee;
+	height: 3rem;
+	vertical-align: middle; 
+}
+
+tfoot > tr > th:first-child {
+	border-bottom-left-radius: 0.3rem;
+}
+
+tfoot > tr > th:last-child {
+	border-bottom-right-radius: 0.3rem;
+}
+
+/* Body */
+tbody > tr > td {
+	border-bottom: 1px solid #DDDBDB;
+	background-color: #ffffff;
+	padding: 0;
+}
+
+tbody > tr:nth-of-type(2n) > td {
+	background-color: #F9F9F9;
+	padding: 0;
+}
+
+tbody > tr:nth-of-type(-1) > td {
+	border-bottom: 0;
+	background-color: #F9F9F9;
+	padding: 0;
+}
+
+/* Input */
+.file-button-container {
+	width: 15%;
+	position: relative;
+	float: right;
+	height: 100%;
+}
+
+table.upload-table button {
+	background-color: inherit;
+	font-weight: bold;
+	color: rgb(44, 44, 44);
+	border: 0;
+    padding: 0.5rem 0.6rem;
+	text-align: center;
+	font-size: 1rem;
+}
+
+table.upload-table button:hover {
+	color: #1ea0c4;
+}
+
+input[type='text'], input[type='number']{
+	box-sizing: border-box;
+	background-color: inherit;
+	border: 0;
+	padding: 0.6rem 1.2rem;
+	height: 100%;
+	position:relative;
+	width: 100%;
+	font-family: "Libre Franklin", Libre Franklin, sans-serif;
+}
+
+input[type='text']:focus, input[type='number']:focus {
+	outline: 0;
+	border-bottom: 3px solid #1ea0c4;
+	height: 100%;
+	margin: -2px 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+td.file > input[type='text']{
+	position: relative;
+	width: 85%;
+	margin: -3px 0;
+}
+
+tbody > tr > td.file button{
+	float: center;
+	width: 0;
+}
+
+tbody > tr > td.remove > button{
+	width: 100%;
+	right: 0;
+}
+
+tbody > tr > td > input[type='text']::placeholder, input[type='number']::placeholder {
+	color: #bbbbbb;
+	font-family: "Libre Franklin", Libre Franklin, sans-serif;
+}
+
+tfoot > tr > th > button {
+	border: 0;
+    padding: 0.6rem;
+	margin: 0 0 0 1rem;
+	float: left;
+	width: 10rem;
+	color: #eee;
+}
+
+tfoot > tr > th > button > span {
+	color: #eee;
+}
+
+tfoot > tr > th > button > i {
+	margin-left: 2rem;
+	color: #eee;
+}
+
+/* ==== SUBMIT ==== */
+.table-control {
+	float: right;
+}
+
+.table-control > button {
+	background-color: #173D50;
+	font-weight: bold;
+	color: #eee;
+	border: 0;
+	border-radius: 0.3rem;
+    padding: 0.75rem 0.75rem;
+	margin: 2rem 0rem 2rem 2rem;
+	text-align: center;
+	font-size: 1rem;
+	width: 10rem;
+	height: 3rem;
+}
+
+.table-control > button > i{
+	margin-left: 1rem;
+}
+
+.table-control > button:hover {
+	background-color: #1e5069;
+}
+
+.table-control > button.reset {
+	background-color: #F9F9F9;
+	border: 1px solid #d5d5d5;
+	color: #000;
+}
+
+.table-control > button.reset:hover {
+	background-color: #f3efef;
+}
